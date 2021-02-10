@@ -1,0 +1,73 @@
+{
+    // List of additional note title tokens to choose from. If supplied, a picker will be shown when creating a new note.
+    "vsnotes.additionalNoteTitles": [
+        "{d}-{title}.{ext}",
+        "{dt}-{title}.{ext}",
+        "{d}.{ext}",
+        "{dt}.{ext}",
+    ],
+    // The default commit message used if none is provided with the Commit and Push command.
+    "vsnotes.commitPushDefaultCommitMessage": "Misc notes",
+    // Shell command to execute in the note directory when the Commit and Push command is executed. The {msg} token will be replaced with the contents of an input box shown or, if empty, the default commit message.
+    "vsnotes.commitPushShellCommand": "git add -A && git commit -m \"{msg}\" && git push",
+    // Default title for new notes.
+    "vsnotes.defaultNoteName": "new",
+    // Path to directory to save notes. Use ~/ to denote a relative path from home folder.
+    "vsnotes.defaultNotePath": "~/notes",
+    // Default note title. Utilizes tokens set in vsnotes.tokens.
+    "vsnotes.defaultNoteTitle": "{title}.{ext}",
+    // Default vscode snippet to execute after creating a note. Set both langId and name to null to disable.
+    "vsnotes.defaultSnippet": {
+        "langId": "markdown",
+        "name": "vsnotes"
+    },
+    // Regular expressions for file names to ignore when parsing documents in note folder.
+    "vsnotes.ignorePatterns": [
+        "^\\."
+    ],
+    // Number of recent files to show when running command `List Notes`.
+    "vsnotes.listRecentLimit": 15,
+    // Automatically convert blank spaces in title to character. To disable set to `null`.
+    "vsnotes.noteTitleConvertSpaces": "_",
+    // A list of markdown templates to choose from when creating a new note.
+    "vsnotes.templates": [
+        "default",
+        "meeting2",
+        "brainstorm"
+    ],
+    // Tokens used to replace text in file name.
+    "vsnotes.tokens": [
+        {
+            "type": "datetime",
+            "token": "{dt}",
+            "format": "YYYY-MM-DD_HH-mm",
+            "description": "Insert formatted datetime."
+        },
+        {
+            "type": "datetime",
+            "token": "{d}",
+            "format": "YYYY-MM-DD",
+            "description": "Insert formatted date."
+        },
+        {
+            "type": "title",
+            "token": "{title}",
+            "description": "Insert note title from input box.",
+            "format": "Untitled"
+        },
+        {
+            "type": "extension",
+            "token": "{ext}",
+            "description": "Insert file vsnotes.",
+            "format": "md"
+        }
+    ],
+    // Hide the files section in the sidebar. Requires application restart.
+    "vsnotes.treeviewHideFiles": false,
+    // Hide the tags section in the sidebar. Requires application restart.
+    "vsnotes.treeviewHideTags": false,
+    // Trimming & EOF settings
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "files.insertFinalNewline": true,
+}

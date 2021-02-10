@@ -1,0 +1,31 @@
+{
+	"vsnote_template_meeting2": {
+        "prefix": "vsnote_template_meeting2",
+        "scope": "markdown",
+        "body": [
+            "---",
+            "tags:",
+            "\t- meeting",
+            "---",
+            "\n# $1- $CURRENT_DATE/$CURRENT_MONTH_NAME_SHORT/$CURRENT_YEAR\n",
+            "## Agenda\n",
+            "$2",
+            "## Minutes\n",
+            "$3",
+        ],
+        "description": "Generic meeting template 2",
+    },
+    "vsnote_template_brainstorm": {
+        "prefix": "vsnote_template_brainstorm",
+        "scope": "markdown",
+        "body": [
+            "---",
+            "tags:",
+            "\t- brainstorm",
+            "---",
+            "\n# $TM_FILENAME_BASE $1\n",
+            "$2",
+        ],
+        "description": "Generic brainstorm template",
+    },
+}
